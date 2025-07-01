@@ -17,7 +17,7 @@ build/
 # === SDK config files ===
 sdkconfig
 sdkconfig.old
-sdkconfig.defaults
+#sdkconfig.defaults
 
 # === VS Code ===
 .vscode/

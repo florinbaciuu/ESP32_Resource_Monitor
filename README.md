@@ -1,5 +1,8 @@
 # 🧠 ESP32_Resource_Monitor
 
+![PlatformIO](https://img.shields.io/badge/PlatformIO-Ready-orange?logo=platformio)
+![ESP-IDF](https://img.shields.io/badge/ESP--IDF-5.x-blue?logo=espressif)
+
 **Advanced resource monitor for ESP32**  
 📟 Tracks tasks, memory, PSRAM, heap, timers, and more, with detailed configuration options via Kconfig.  
 ✍️ Created by [Baciu Aurel Florin](mailto:baciuaurelflorin@gmail.com) (a.k.a. The Lightbringer)
