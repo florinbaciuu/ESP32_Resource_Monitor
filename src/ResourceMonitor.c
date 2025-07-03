@@ -403,7 +403,9 @@ void resource_monitor_callback_adapter(void *arg) {
 }
 
 //---------------
-
+/********************************************** */
+/*                   TASK                       */
+/********************************************** */
 static void vResourceMonitorTask(void *pvParameters) {
   (void)pvParameters;
   ESP_LOGI(TAG, "ESPResourceMonitor v" ESP_RESOURCE_MONITOR_VERSION " initialized");
@@ -464,6 +466,10 @@ void resource_monitor_callback_adapter() {
   resource_monitor_callback();
 }
 
+
+/********************************************** */
+/*                   TASK                       */
+/********************************************** */
 static void vResourceMonitorTask(void *pvParameters) {
   (void)pvParameters;
   ESP_LOGI(TAG, "ESPResourceMonitor v" ESP_RESOURCE_MONITOR_VERSION " initialized");
