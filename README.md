@@ -180,6 +180,9 @@ The heresy of idle tasks shall burn in the fire of RAM.
 
 # 🧠 ESP32_Resource_Monitor (în română)
 
+![PlatformIO](https://img.shields.io/badge/PlatformIO-Ready-orange?logo=platformio)
+![ESP-IDF](https://img.shields.io/badge/ESP--IDF-5.x-blue?logo=espressif)
+
 **Monitor avansat de resurse pentru ESP32**  
 📟 Monitorizează taskuri, memorie, PSRAM, heap, timere și mai mult, cu opțiuni detaliate de configurare via Kconfig.  
 ✍️ Creat de [Baciu Aurel Florin](mailto:baciuaurelflorin@gmail.com) (a.k.a. The Lightbringer)
