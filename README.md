@@ -87,15 +87,54 @@ void app_main() {
 
 ## 🧪 Sample Output
 
-📌 _Replace with real screenshot from console output._
+📌 Real console output:
 
 ```
------------------Task Dump Start-----------------
-Load    Stack   State    CoreID   PRIO     Name
- 0.34     512   Ready    1        5        [RESMONITOR(R)]
- 5.12     2048  Running  0        1        [IDLE0          ]
-...
------------------Task Dump End-------------------
+I (652) MY-RESOURCE-MONITOR (BY Florin Baciu): ESPResourceMonitor v1.0.0 initialized
+I (5647) MY-RESOURCE-MONITOR (BY Florin Baciu): Timestamp: [1970-01-01 02:38:50]
+I (5647) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Task Dump Start-----------------
+
+Load    Stack   State   CoreID  PRIO    Name
+0.01    1744    Running 1       3       [RESMONITOR(R)   ] 
+98.56   2484    Ready   0       0       [IDLE0           ] 
+92.65   2492    Ready   1       0       [IDLE1           ] 
+0.21    2408    Blocked 1       24      [LVGL Tick Task  ] 
+0.05    2196    Suspend 0       19      [ipc0            ] 
+0.01    1996    Suspend 1       19      [v_check_0_pin_s ] 
+0.08    6704    Suspend 1/2     3       [swdraw          ] 
+0.57    6648    Suspend 1/2     3       [swdraw          ] 
+0.00    3860    Suspend 0       22      [esp_timer       ] 
+7.00    3616    Suspend 1       22      [LVGL Main Task  ] 
+0.05    2332    Suspend 1       24      [ipc1            ] 
+
+I (5651) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Task Dump End-------------------
+I (5651) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Memory Info Start---------------
+
+╔═══════════════════════════════ MEMORY STATS ═════════════════════════════╗
+║   Segment     │    Total     │    Used     │   Free      │ Utilizare %   ║
+╟───────────────┼──────────────┼─────────────┼─────────────┼────────────────╢
+║ RAM          │   274.2 KB  │    73.8 KB │   200.4 KB │    26.93 %     ║
+║ RAM-DMA      │   266.5 KB  │    73.4 KB │   193.1 KB │    27.56 %     ║
+║ RAM 8 bit    │   274.2 KB  │    73.8 KB │   200.4 KB │    26.93 %     ║
+║ RAM 32 bit   │   274.2 KB  │    73.8 KB │   200.4 KB │    26.93 %     ║
+║ RTC RAM      │     7.7 KB  │     0.4 KB │     7.3 KB │     4.97 %     ║
+║ PSRAM        │  7104.0 KB  │  1363.1 KB │  5740.9 KB │    19.19 %     ║
+║ PSRAM 8 bit  │  7104.0 KB  │  1363.1 KB │  5740.9 KB │    19.19 %     ║
+║ PSRAM 32 bit │  7104.0 KB  │  1363.1 KB │  5740.9 KB │    19.19 %     ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+I (5656) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Memory Info End-----------------
+I (5656) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------ESP Timer Dump Start------------
+
+Timer stats:
+Name                  Period      Alarm         Times_armed   Times_trigg   Times_skip    Cb_exec_time
+res_mon_timer         5000000     10159844      1             1             0             10
+
+I (5657) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------ESP Timer Dump End--------------
+I (5658) RESMON_BENCH: resource_monitor_callback() execution time: 10648 µs (10.65 ms)
+I (10647) RESMON_BENCH: Δ timp între apeluri: 5000000 µs (5.00 sec)
+I (10647) MY-RESOURCE-MONITOR (BY Florin Baciu): Timestamp: [1970-01-01 02:38:55]
 ```
 
 ---
@@ -225,15 +264,54 @@ void app_main() {
 
 ## 🧪 Exemplu de output
 
-📌 _Aici poți adăuga un screenshot real din consolă după ce rulezi aplicația._
+📌 Output Real:
 
 ```
------------------Task Dump Start-----------------
-Load    Stack   State    CoreID   PRIO     Name
- 0.34     512   Ready    1        5        [RESMONITOR(R)]
- 5.12     2048  Running  0        1        [IDLE0          ]
-...
------------------Task Dump End-------------------
+I (652) MY-RESOURCE-MONITOR (BY Florin Baciu): ESPResourceMonitor v1.0.0 initialized
+I (5647) MY-RESOURCE-MONITOR (BY Florin Baciu): Timestamp: [1970-01-01 02:38:50]
+I (5647) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Task Dump Start-----------------
+
+Load    Stack   State   CoreID  PRIO    Name
+0.01    1744    Running 1       3       [RESMONITOR(R)   ] 
+98.56   2484    Ready   0       0       [IDLE0           ] 
+92.65   2492    Ready   1       0       [IDLE1           ] 
+0.21    2408    Blocked 1       24      [LVGL Tick Task  ] 
+0.05    2196    Suspend 0       19      [ipc0            ] 
+0.01    1996    Suspend 1       19      [v_check_0_pin_s ] 
+0.08    6704    Suspend 1/2     3       [swdraw          ] 
+0.57    6648    Suspend 1/2     3       [swdraw          ] 
+0.00    3860    Suspend 0       22      [esp_timer       ] 
+7.00    3616    Suspend 1       22      [LVGL Main Task  ] 
+0.05    2332    Suspend 1       24      [ipc1            ] 
+
+I (5651) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Task Dump End-------------------
+I (5651) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Memory Info Start---------------
+
+╔═══════════════════════════════ MEMORY STATS ═════════════════════════════╗
+║   Segment     │    Total     │    Used     │   Free      │ Utilizare %   ║
+╟───────────────┼──────────────┼─────────────┼─────────────┼────────────────╢
+║ RAM          │   274.2 KB  │    73.8 KB │   200.4 KB │    26.93 %     ║
+║ RAM-DMA      │   266.5 KB  │    73.4 KB │   193.1 KB │    27.56 %     ║
+║ RAM 8 bit    │   274.2 KB  │    73.8 KB │   200.4 KB │    26.93 %     ║
+║ RAM 32 bit   │   274.2 KB  │    73.8 KB │   200.4 KB │    26.93 %     ║
+║ RTC RAM      │     7.7 KB  │     0.4 KB │     7.3 KB │     4.97 %     ║
+║ PSRAM        │  7104.0 KB  │  1363.1 KB │  5740.9 KB │    19.19 %     ║
+║ PSRAM 8 bit  │  7104.0 KB  │  1363.1 KB │  5740.9 KB │    19.19 %     ║
+║ PSRAM 32 bit │  7104.0 KB  │  1363.1 KB │  5740.9 KB │    19.19 %     ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+I (5656) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------Memory Info End-----------------
+I (5656) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------ESP Timer Dump Start------------
+
+Timer stats:
+Name                  Period      Alarm         Times_armed   Times_trigg   Times_skip    Cb_exec_time
+res_mon_timer         5000000     10159844      1             1             0             10
+
+I (5657) MY-RESOURCE-MONITOR (BY Florin Baciu): -----------------ESP Timer Dump End--------------
+I (5658) RESMON_BENCH: resource_monitor_callback() execution time: 10648 µs (10.65 ms)
+I (10647) RESMON_BENCH: Δ timp între apeluri: 5000000 µs (5.00 sec)
+I (10647) MY-RESOURCE-MONITOR (BY Florin Baciu): Timestamp: [1970-01-01 02:38:55]
 ```
 
 ---

@@ -40,7 +40,7 @@
 
 // -------------------------------------------------------------------------
 
-const static char *TAG = "MY-RESOURCE-MONITOR (BY Florin Baciu)";
+const static char *TAG = "MY-RESOURCE-MONITOR";
 const char *resource_monitor_task_name = "RESMONITOR(R)";  // max 16 chars cu NULL
 
 // -------------------------------------------------------------------------
